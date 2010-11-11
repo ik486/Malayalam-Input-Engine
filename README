@@ -1,0 +1,36 @@
+About SCIM
+----------
+
+        The Smart Common Input Method platform (SCIM) is an input method (IM) platform containing support for more than thirty languages (CJK and many European languages) for POSIX-style operating systems including Linux and BSD.
+
+
+
+About  Malayalam-Input-Engine
+-----------------------------
+
+	In mobile ten numeric characters 0-9 is mapped to 26 english alphabets. Like in mobile, in this engine all Malayalam characters are mapped to 26 english characters
+
+
+
+How to to install Malayalam-Input-Engine
+----------------------------------------
+
+        1) Install SCIM python
+                sudo yum install scim-python
+
+        2) Install Unicode version of Malayalam-Input-Engine
+                cd Malayalam-Input-Engine
+                sudo cp -r UnicodeEngine /usr/share/scim-python/engine
+
+        3) Install Ascii version of Malayalam-Input-Engine for inputing CDAC Malayalam ASCII fonts
+                cd Malayalam-Input-Engine
+                sudo cp -r AsciiEngine /usr/share/scim-python/engine
+
+
+
+Run following to select your input method
+-----------------------------------------
+
+        scim-setup
+        im-chooser
+
